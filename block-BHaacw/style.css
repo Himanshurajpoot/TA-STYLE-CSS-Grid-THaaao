@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* common-classs*/
+html {
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  background-color: rgb(58, 74, 79);
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-item-between {
+  justify-items: space-between;
+}
+
+.justify-item-center {
+  justify-items: center;
+}
+
+.align-start {
+  align-items: start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-border {
+  border-top: 3px solid rgb(73, 151, 191);
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-tometo {
+  background-color: rgb(252, 51, 31);
+}
+
+.bg-blue {
+  background-color: rgb(73, 151, 191);
+}
+
+.box-text-color {
+  color: rgb(77, 93, 99);
+}
+
+.text-red {
+  color: rgb(252, 51, 31);
+}
+
+.text-white {
+  color: white;
+}
+
+.font-24 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.img {
+  width: 100%;
+}
+
+.margin {
+  margin: 1.5rem 0;
+}
+
+.margin-top {
+  margin-top: 1.5rem;
+}
+
+/*header*/
+.heading {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: white;
+}
+
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(73, 151, 191);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/*hero-section*/
+.grid-box {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.img-box {
+  grid-row: span 3;
+  text-align: center;
+}
+.img-box .img {
+  width: 22rem;
+  height: 22rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.graph-img-box {
+  grid-row: span 2;
+  text-align: center;
+}
+
+.box-text-color {
+  padding: 1rem;
+}
+
+.blue-box {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+.blue-box h2, .blue-box p, .blue-box a {
+  padding-left: 1rem;
+}
+
+.tometo-box {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.tometo-box h2, .tometo-box p, .tometo-box div {
+  padding-left: 1rem;
+}
+.tometo-box div {
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    padding-bottom: 2rem;
+  }
+  .container {
+    max-width: 1250px;
+  }
+}
+@media screen and (max-width: 950px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 900px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+  body {
+    margin-top: 4rem;
+  }
+  .container {
+    max-width: 740px;
+  }
+  .grid-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "article-1 article-3" "article-4 article-5" "article-4  article-6 " "article-2  .";
+  }
+  .article-1 {
+    grid-area: article-1;
+  }
+  .article-2 {
+    grid-area: article-2;
+  }
+  .article-3 {
+    grid-area: article-3;
+  }
+  .article-4 {
+    grid-area: article-4;
+  }
+  .article-5 {
+    grid-area: article-5;
+  }
+  .article-6 {
+    grid-area: article-6;
+  }
+}
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 8px;
+  }
+  body {
+    padding-bottom: 2rem;
+  }
+  .container {
+    max-width: 450px;
+  }
+  .grid-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "article-1 " "article-4 " "article-2 " "article-3" "article-5" "article-6";
+  }
+}/*# sourceMappingURL=style.css.map */

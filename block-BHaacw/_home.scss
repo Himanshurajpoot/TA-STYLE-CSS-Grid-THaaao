@@ -1,0 +1,81 @@
+/*header*/
+
+
+.heading{
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: white;
+}
+
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+  
+    a{
+        text-decoration: none;
+        color: $header-font-color;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}
+
+/*hero-section*/
+
+.grid-box{
+     margin-top: 1rem;
+     display: grid;
+     grid-template-columns: repeat(3,  1fr);
+     gap: 1rem;
+}
+
+.img-box{
+    grid-row: span 3;
+    text-align: center;
+    .img{
+        width: 22rem;
+        height: 22rem;
+        border-radius: 50%;
+        object-fit: cover;
+        
+    }
+}
+
+.graph-img-box{
+    grid-row: span 2;
+    text-align: center;
+}
+
+.box-text-color{
+    padding: 1rem;
+}
+
+.blue-box{
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    h2,p,a{
+        padding-left: 1rem;
+    }
+
+}
+
+.tometo-box{
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    h2,p,div{
+        padding-left: 1rem;
+    }
+
+    div{
+        margin-top: 3rem;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
+
+html{
+    font-size: 16px;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    line-height: 1.5;
+    background-color: $background-color;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.grid{
+    display: grid;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-item-between{
+    justify-items: space-between;
+}
+.justify-item-center{
+    justify-items: center;
+}
+.align-start{
+    align-items: start;
+}
+.align-center{
+    align-items: center;
+}
+
+.text-align-left{
+    text-align: left;
+}
+.text-center{
+    text-align: center;
+}
+
+.top-border{
+    border-top: 3px solid $header-font-color;
+}
+
+// padding
+.pl-1{
+    padding-left: 1rem;
+}
+
+.p-0{
+    padding: 0;
+}
+
+// color
+.bg-white{
+    background-color: white;
+}
+
+.bg-tometo{
+    background-color: rgb(252,51,31);
+}
+
+.bg-blue{
+background-color: $header-font-color;
+}
+
+.box-text-color{
+    color: rgb(77,93,99);
+}
+
+.text-red{
+    color: rgb(252,51,31);
+}
+
+.text-white{
+    color: white;
+}
+
+// font-size
+
+.font-24{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.img{
+    width: 100%;
+}
+
+
+
+// margin
+.margin{
+    margin: 1.5rem 0;
+}
+
+.margin-top{
+    margin-top: 1.5rem;
+}
