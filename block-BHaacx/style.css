@@ -1,1 +1,511 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* common classes */
+html {
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 3rem;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
+}
+
+.bg-light-pink {
+  background-color: rgb(245, 227, 215);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-dark-yellow {
+  background-color: rgb(236, 175, 78);
+}
+
+.bg-orange {
+  background-color: rgb(252, 104, 62);
+}
+
+.bg-black {
+  background-color: rgb(22, 22, 22);
+}
+
+.text-black {
+  color: rgb(39, 49, 49);
+}
+
+.text-light-black {
+  color: rgb(164, 162, 162);
+}
+
+.text-yellow {
+  color: rgb(245, 213, 162);
+}
+
+.text-white {
+  color: rgb(253, 247, 237);
+}
+
+.text-brown {
+  color: rgb(114, 51, 52);
+}
+
+.padding-32 {
+  padding: 2rem;
+}
+
+.padding-48 {
+  padding: 3rem;
+}
+
+.margin-32 {
+  margin: 2rem;
+}
+
+.margin-t-b-32 {
+  margin: 2rem 0;
+}
+
+.margin-top-32 {
+  margin-top: 2rem;
+}
+
+.margin-bottom-32 {
+  margin-bottom: 2rem;
+}
+
+.margin-left {
+  margin-left: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-centar {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-100 {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.height-400 {
+  height: 400px;
+}
+
+.height-450 {
+  height: 450px;
+}
+
+.height-340 {
+  height: 340px;
+}
+
+.height-700 {
+  height: 700px;
+}
+
+.height-600 {
+  height: 600px;
+}
+
+.font-32 {
+  font-size: 2rem;
+}
+
+.font-24 {
+  font-size: 1.5rem;
+}
+
+.font-waight {
+  font-weight: 700;
+}
+
+.font-16 {
+  font-size: 1rem;
+}
+
+.font-14 {
+  font-size: 0.9rem;
+}
+
+.font-0 {
+  font-size: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 2rem;
+}
+
+.header .nav-bar a {
+  margin-right: 3rem;
+}
+
+.header .toggle-input,
+.header .toggle-lable {
+  display: none;
+}
+
+.hero {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero-article {
+  padding: 12rem 3rem;
+}
+
+.hero-article .hero-btn {
+  border-radius: 30px;
+  padding: 0.8rem 3rem;
+  background-color: rgb(245, 227, 215);
+  border: 3px solid black;
+  margin-top: 4rem;
+}
+
+.skill-box .hr {
+  margin: 1rem 0;
+  border: 2px solid;
+}
+
+.column-content {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-text {
+  margin-top: 1rem;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.form input,
+.form textarea {
+  padding: 1rem;
+  border: 0;
+  border-bottom: 2px solid rgb(237, 162, 33);
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.form input::-moz-placeholder {
+  color: white;
+}
+
+.form input::placeholder {
+  color: white;
+}
+
+.form textarea::-moz-placeholder {
+  color: white;
+}
+
+.form textarea::placeholder {
+  color: white;
+}
+
+.form .form-btn {
+  padding: 0.5rem 6rem;
+  border-radius: 20px;
+  border: 0;
+  margin-top: 3rem;
+}
+
+.contect-ul li {
+  margin-top: 1rem;
+}
+
+iframe {
+  padding: 2rem 0;
+}
+
+footer {
+  padding: 6rem 0;
+  margin-top: 4rem;
+}
+
+.footer-nav ul {
+  gap: 5rem;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .header {
+    margin: 0;
+    padding: 1rem 0;
+    background-color: white;
+    position: fixed;
+  }
+
+  .header nav {
+    display: none;
+  }
+
+  .header #toggle-bar:checked~nav {
+    display: inline-block;
+  }
+
+  .header .toggle-lable {
+    display: block;
+    font-size: 2rem;
+    z-index: 99;
+  }
+
+  .header .brand {
+    position: relative;
+    z-index: 99;
+  }
+
+  .header nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(155, 194, 246, 0.739);
+  }
+
+  .header nav a {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    color: rgb(229, 14, 14);
+  }
+
+  .hero {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .span-2 {
+    grid-column: span 1;
+  }
+
+  .skill-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .res-height-700 {
+    height: 600px;
+  }
+
+  .margin-left {
+    margin-left: 2rem;
+  }
+
+  .form-btn {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

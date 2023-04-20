@@ -1,13 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS GRID</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    
+    <header class="header ">
+        <div class="container flex justify-between align-centar ">
+            <div>
+                <a class="text-black font-24 font-waight brand" href="#">Stimulus</a>
+            </div>
+            <label for="toggle-bar" class="toggle-lable">
+                <i class="fas fa-bars "></i>
+
+            </label>
+            <input type="checkbox" id="toggle-bar" class="toggle-input">
+            <nav class="font-14 nav-bar">
+                <a class="text-yellow font-waight" href="#">HOME</a>
+                <a class="text-light-black" href="#">ABOUT ME</a>
+                <a class="text-light-black" href="#">EXPERINCES</a>
+                <a class="text-light-black" href="#">TESTIMONIAL</a>
+                <a class="text-light-black" href="#">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- hero -->
+        <section>
+            <div class="hero grid ">
+                <div class="font-0 span-2">
+                    <img class="height-700 img-100" src="assets/media/home-img.jpg" alt="home-img.jpg">
+                </div>
+                <article class="bg-light-pink height-700  res-height-700 hero-article span-2">
+                    <p class="text-light-black">WELCOME TO MY WEBSITE</p>
+                    <h2 class="text-black font-32 margin-t-b-32">Hello, I am <strong
+                            class="text-black font-waight">Stimulus</strong> currently based in New York city. </h2>
+                    <p class="text-light-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est
+                        possimus tenetur vel excepturi culpa voluptatem nisi numquam. Sed, ipsam!
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum est
+                        possimus tenetur vel excepturi culpa voluptatem nisi numquam. Sed, ipsam!
+                    </p>
+                    <button class="text-black margin-top-32 hero-btn">GET STARTED</button>
+                </article>
+                <!-- Donec auctor -->
+                <article class="span-2 height-340 Donec padding-32 ">
+                    <h2 class="font-32">Donec auctor</h2>
+                    <p class="text-yellow margin-t-b-32">Sed vulputate vitae diam quis bibendum</p>
+
+                    <p class="text-light-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Beatae quaerat vel, dolor quibusdam, rerum molestiae <br>
+                        corrupti laudantium in non ipsam sed cumque similique.
+                        Nobis dolorem itaque <br> in labore molestiae accusamus!
+                    </p>
+                    <p class="text-light-black">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Beatae quaerat vel, dolor quibusdam, rerum molestiae
+                        Beatae quaerat vel, dolor quibusdam, rerum molestiae
+                        Beatae quaerat vel, dolor quibusdam, rerum molestiae
+                    </p>
+                </article>
+                <figure class="font-0">
+                    <img class="img-100 height-340" src="assets/media/about-img.jpg" alt="about-img.jpg">
+                </figure>
+                <article class=" skill-box">
+
+                    <div class="bg-dark-yellow padding-32 height-340">
+                        <div class="margin-bottom-32">
+                            <h2 class="font-32 text-white">My Skills</h2>
+                            <p class="text-white">Photoshop . HTML CSS JS . Web Design</p>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <p>Frontend Design</p>
+                            <h3 class="text-white">90%</h3>
+                        </div>
+                        <hr class="hr">
+                        <div class="flex justify-between">
+                            <p>Backend Processing</p>
+                            <h3 class="text-white">70%</h3>
+                        </div>
+                        <hr class="hr">
+                        <div class="flex justify-between">
+                            <p>HTML & CSS3</p>
+                            <h3 class="text-white">80%</h3>
+                        </div>
+                        <hr class="hr">
+                    </div>
+                </article>
+                <!--******* 4 column section ******-->
+                <article class=" height-340 bg-dark-yellow padding-48 text-center  text-white column-content">
+                    <div>
+                        <i class="fas fa-tv font-32"></i>
+                        <h3 class="font-24 margin-t-b-32">Interface Design</h3>
+                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, sequi?</p>
+                    </div>
+                </article>
+                <article class=" height-340 bg-orange text-center padding-48 text-white column-content">
+                    <div>
+                        <i class="fas fa-location-arrow font-32"></i>
+                        <h3 class="font-24 margin-t-b-32">Media Strategy</h3>
+                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, sequi?</p>
+                    </div>
+                </article>
+                <article class=" height-340 bg-black text-center padding-48 text-white column-content">
+                    <div>
+                        <i class="fas fa-table font-32"></i>
+                        <h3 class="font-24 margin-t-b-32">Mobail App</h3>
+                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, sequi?</p>
+                    </div>
+                </article>
+                <article class=" height-340 bg-white text-center padding-48 text-light-black column-content ">
+                    <div>
+                        <i class="fab fa-html5 font-32"></i>
+                        <h3 class="font-24 margin-t-b-32">Coding</h3>
+                        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, sequi?</p>
+                    </div>
+                </article>
+                <!-- experiences-col -->
+                <figure class="font-0 span-2 ">
+                    <img class="img-100 height-400 " src="assets/media/experience-img.jpg" alt="">
+                </figure>
+                <article class="height-400 text-white bg-orange span-2 padding-48 experiences-article">
+                    <h2 class="font-32">My Experiences</h2>
+                    <p>Previous companies and my tasks</p>
+                    <div class="flex justify-between align-start margin-top-32">
+                        <i class="fas fa-tv font-32"></i>
+                        <div class="margin-left">
+                            <h3 class="font-24">Graphic Designer <span class="font-14 text-black font-waight">2014
+                                    Jul-2015 Sep</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Itaque ducimus praesentium fuga accusantium maxime tempora?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between align-start margin-top-32">
+                        <i class="fas fa-tv font-32"></i>
+                        <div class="margin-left">
+                            <h3 class="font-24">Web Designer <span class="font-14 text-black font-waight">2015 Oct-2017
+                                    Jan</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Itaque ducimus praesentium fuga accusantium maxime tempora?
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <!-- education-col -->
+                <article class="text-white bg-dark-yellow span-2 padding-48 education-article height-450">
+                    <h2 class="font-32">My Education</h2>
+                    <p>In cursus orci non ipsum gravida dignissim</p>
+                    <div class="flex justify-between align-start margin-top-32">
+                        <i class="fas fa-tv font-32"></i>
+                        <div class="margin-left">
+                            <h3 class="font-24">Master in Design <span class="font-14 text-black font-waight">2012
+                                    Jan-2014 May</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Itaque ducimus praesentium fuga accusantium maxime tempora?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex justify-between align-start margin-top-32">
+                        <i class="fas fa-tv font-32"></i>
+                        <div class="margin-left">
+                            <h3 class="font-24">Bachelor of Arts <span class="font-14 text-black font-waight">2008
+                                    May-2011 Dec</span></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Itaque ducimus praesentium fuga accusantium maxime tempora?
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                <figure class="font-0 span-2 ">
+                    <img class="img-100 height-450" src="assets/media/education-img.jpg" alt="">
+                </figure>
+                <!-- form-section -->
+                <article class="text-white bg-orange span-2 height-700">
+                    <div class="padding-32">
+                        <h2 class="font-32">Say hello..</h2>
+                        <p class="form-text">In cursus orci non ipsum gravida dignissim</p>
+                        <form class="form" action="">
+                            <fieldset>
+                                <input class="width-100 bg-orange " type="text" placeholder="Your Name ">
+                                <input class="width-100 bg-orange " type="email" placeholder="Your Email">
+                                <textarea class="width-100 bg-orange" name="" id="" cols="" rows="10"
+                                    placeholder="Write your message..."></textarea>
+                            </fieldset>
+                            <button class="form-btn text-light-black font-waight">Send</button>
+                        </form>
+
+                    </div>
+
+                </article>
+                <figure class="font-0 ">
+                    <img class="img-100 height-700" src="assets/media/contact-img.jpg" alt="">
+                </figure>
+                <div class="bg-black padding-48 text-white height-700 res-height-700">
+                    <h3 class="font-24">Visit my office</h3>
+                    <p class="margin-t-b-32 text-brown">456 New Street 22000, New York City <br>USA</p>
+                    <h3 class="font-24">Contact</h3>
+                    <ul class="contect-ul">
+                        <li><i class="fas fa-phone"></i> <span class="margin-left ">0000 1234 1254</span></li>
+                        <li><i class="far fa-envelope"></i> <span
+                                class="text-yellow margin-left">hello@compny.com</span></li>
+                        <li><i class="fas fa-globe-asia"></i> <span class="text-yellow margin-left">Company.com </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bg-orange text-center ">
+                <iframe class=""
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26997.521594329923!2d77.16961020645866!3d32.23950714196307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39048708163fd03f%3A0x8129a80ebe5076cd!2sManali%2C%20Himachal%20Pradesh!5e0!3m2!1sen!2sin!4v1611142631350!5m2!1sen!2sin"
+                    width="70%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+
+            </div>
+        </section>
+    </main>
+    <footer class="text-center ">
+        <p class="text-light-black">copyright &copy; 2016 Your Company | Design: <span
+                class="text-yellow">templatemo</span></p>
+        <nav class="margin-top-32 footer-nav">
+            <ul class="flex text-center justify-center">
+                <li><a class="text-light-black" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="text-light-black" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="text-light-black" href="#"><i class="fab fa-github"></i></a></li>
+                <li><a class="text-light-black" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>

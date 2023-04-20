@@ -1,0 +1,97 @@
+@import "./reset";
+@import "./general";
+@import "./home";
+
+
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+
+
+    .header {
+        margin: 0;
+        padding: 1rem 0;
+        background-color: white;
+        position: fixed;
+
+        nav {
+            display: none;
+        }
+
+        #toggle-bar:checked~nav {
+            display: inline-block;
+
+        }
+
+        .toggle-lable {
+            display: block;
+            font-size: 2rem;
+            z-index: 99;
+        }
+
+        .brand {
+            position: relative;
+            z-index: 99;
+
+        }
+
+        nav {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            font-size: 2rem;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+
+            background-color: rgba(155, 194, 246, 0.739);
+
+            a {
+                display: flex;
+                justify-content: center;
+                margin-top: 2rem;
+                color: rgb(229, 14, 14);
+            }
+        }
+
+    }
+
+    .hero {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .span-2 {
+        grid-column: span 1;
+    }
+
+
+
+    .skill-box {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    iframe {
+        width: 100%;
+
+    }
+
+
+    .res-height-700 {
+        height: 600px;
+    }
+
+    .margin-left {
+        margin-left: 2rem;
+    }
+
+    .form-btn {
+        width: 100%;
+    }
+
+
+}

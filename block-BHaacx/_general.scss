@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+html {
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 3rem;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+
+// bg-color
+
+.bg-light-pink {
+    background-color: rgb(245, 227, 215);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-dark-yellow {
+    background-color: rgb(236, 175, 78);
+}
+
+.bg-orange {
+    background-color: rgb(252, 104, 62);
+}
+
+.bg-black {
+    background-color: rgb(22, 22, 22);
+}
+
+// text-color
+
+.text-black {
+    color: rgb(39, 49, 49);
+}
+
+.text-light-black {
+    color: rgb(164, 162, 162);
+}
+
+.text-yellow {
+    color: rgb(245, 213, 162);
+}
+
+.text-white {
+    color: rgb(253, 247, 237);
+}
+
+.text-brown {
+    color: rgb(114, 51, 52);
+}
+
+
+// padding
+
+.padding-32 {
+    padding: 2rem;
+}
+
+.padding-48 {
+    padding: 3rem;
+}
+
+.margin-32 {
+    margin: 2rem;
+}
+
+.margin-t-b-32 {
+    margin: 2rem 0;
+}
+
+.margin-top-32 {
+    margin-top: 2rem;
+}
+
+.margin-bottom-32 {
+    margin-bottom: 2rem;
+}
+
+.margin-left {
+    margin-left: 1rem;
+}
+
+// flex
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+
+}
+
+.align-centar {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.img-100 {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+// hight
+
+.height-400 {
+    height: 400px;
+}
+
+.height-450 {
+    height: 450px;
+}
+
+.height-340 {
+    height: 340px;
+}
+
+.height-700 {
+    height: 700px;
+}
+
+.height-600 {
+    height: 600px;
+}
+
+// font-size
+
+.font-32 {
+    font-size: 2rem;
+}
+
+.font-24 {
+    font-size: 1.5rem;
+}
+
+.font-waight {
+    font-weight: 700;
+}
+
+.font-16 {
+    font-size: 1rem;
+}
+
+.font-14 {
+    font-size: 0.9rem;
+}
+
+.font-0 {
+    font-size: 0;
+}
+
+// grid
+
+.grid {
+    display: grid;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+
+.span-1 {
+    grid-column: span 1;
+}
