@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: aquamarine;
+    padding: 2rem 0rem;
+}
+
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    
+}
